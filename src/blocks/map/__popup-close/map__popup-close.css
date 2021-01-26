@@ -1,0 +1,13 @@
+.map__popup-close {
+    align-self: flex-end;
+    margin: 3px 0 0 0;
+    background-image: url("../../../images/close.svg");
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer
+}

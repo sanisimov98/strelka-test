@@ -1,0 +1,17 @@
+.map__link {
+    width: 100%;
+    padding: 16px 0 16px 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    transition: ease-in-out 200ms;
+    justify-self: flex-end;
+}
+
+.map__link:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+@import "__list-container/map__list-container.css";
+@import "__list/map__list.css";
+@import "__list-item/map__list-item.css";
+@import "__list-link/map__list-link.css";
+@import "__link/map__link.css";
+@import "__main/map__main.css";
+@import "__popup/map__popup.css";
+@import "__popup-close/map__popup-close.css";
+@import "__popup-title/map__popup-title.css";
+
+.map {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,10 @@
+@import url('__title/main__title.css');
+@import url('__link/main__link.css');
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
