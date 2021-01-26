@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.afaa1760.chunk.css",
-    "main.js": "/static/js/main.32dc762a.chunk.js",
-    "main.js.map": "/static/js/main.32dc762a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.65153374.js",
-    "runtime-main.js.map": "/static/js/runtime-main.65153374.js.map",
-    "static/js/2.5996b475.chunk.js": "/static/js/2.5996b475.chunk.js",
-    "static/js/2.5996b475.chunk.js.map": "/static/js/2.5996b475.chunk.js.map",
-    "static/js/3.ab152eb9.chunk.js": "/static/js/3.ab152eb9.chunk.js",
-    "static/js/3.ab152eb9.chunk.js.map": "/static/js/3.ab152eb9.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.afaa1760.chunk.css.map": "/static/css/main.afaa1760.chunk.css.map",
-    "static/js/2.5996b475.chunk.js.LICENSE.txt": "/static/js/2.5996b475.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/close.b7a9c534.svg"
+    "main.css": "/strelka-site/static/css/main.f8662092.chunk.css",
+    "main.js": "/strelka-site/static/js/main.d5d8b402.chunk.js",
+    "main.js.map": "/strelka-site/static/js/main.d5d8b402.chunk.js.map",
+    "runtime-main.js": "/strelka-site/static/js/runtime-main.93bfe6ee.js",
+    "runtime-main.js.map": "/strelka-site/static/js/runtime-main.93bfe6ee.js.map",
+    "static/js/2.e0f401bf.chunk.js": "/strelka-site/static/js/2.e0f401bf.chunk.js",
+    "static/js/2.e0f401bf.chunk.js.map": "/strelka-site/static/js/2.e0f401bf.chunk.js.map",
+    "static/js/3.ab152eb9.chunk.js": "/strelka-site/static/js/3.ab152eb9.chunk.js",
+    "static/js/3.ab152eb9.chunk.js.map": "/strelka-site/static/js/3.ab152eb9.chunk.js.map",
+    "index.html": "/strelka-site/index.html",
+    "static/css/main.f8662092.chunk.css.map": "/strelka-site/static/css/main.f8662092.chunk.css.map",
+    "static/js/2.e0f401bf.chunk.js.LICENSE.txt": "/strelka-site/static/js/2.e0f401bf.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/strelka-site/static/media/close.b7a9c534.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.65153374.js",
-    "static/js/2.5996b475.chunk.js",
-    "static/css/main.afaa1760.chunk.css",
-    "static/js/main.32dc762a.chunk.js"
+    "static/js/runtime-main.93bfe6ee.js",
+    "static/js/2.e0f401bf.chunk.js",
+    "static/css/main.f8662092.chunk.css",
+    "static/js/main.d5d8b402.chunk.js"
   ]
 }
