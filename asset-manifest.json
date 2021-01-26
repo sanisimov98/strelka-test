@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/strelka-test/static/css/main.c72a38ca.chunk.css",
-    "main.js": "/strelka-test/static/js/main.5026ee69.chunk.js",
-    "main.js.map": "/strelka-test/static/js/main.5026ee69.chunk.js.map",
+    "main.js": "/strelka-test/static/js/main.41a2599e.chunk.js",
+    "main.js.map": "/strelka-test/static/js/main.41a2599e.chunk.js.map",
     "runtime-main.js": "/strelka-test/static/js/runtime-main.d5fb944f.js",
     "runtime-main.js.map": "/strelka-test/static/js/runtime-main.d5fb944f.js.map",
-    "static/js/2.b361669e.chunk.js": "/strelka-test/static/js/2.b361669e.chunk.js",
-    "static/js/2.b361669e.chunk.js.map": "/strelka-test/static/js/2.b361669e.chunk.js.map",
+    "static/js/2.38155719.chunk.js": "/strelka-test/static/js/2.38155719.chunk.js",
+    "static/js/2.38155719.chunk.js.map": "/strelka-test/static/js/2.38155719.chunk.js.map",
     "static/js/3.ab152eb9.chunk.js": "/strelka-test/static/js/3.ab152eb9.chunk.js",
     "static/js/3.ab152eb9.chunk.js.map": "/strelka-test/static/js/3.ab152eb9.chunk.js.map",
     "index.html": "/strelka-test/index.html",
     "static/css/main.c72a38ca.chunk.css.map": "/strelka-test/static/css/main.c72a38ca.chunk.css.map",
-    "static/js/2.b361669e.chunk.js.LICENSE.txt": "/strelka-test/static/js/2.b361669e.chunk.js.LICENSE.txt",
+    "static/js/2.38155719.chunk.js.LICENSE.txt": "/strelka-test/static/js/2.38155719.chunk.js.LICENSE.txt",
     "static/media/index.css": "/strelka-test/static/media/close.b7a9c534.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d5fb944f.js",
-    "static/js/2.b361669e.chunk.js",
+    "static/js/2.38155719.chunk.js",
     "static/css/main.c72a38ca.chunk.css",
-    "static/js/main.5026ee69.chunk.js"
+    "static/js/main.41a2599e.chunk.js"
   ]
 }
