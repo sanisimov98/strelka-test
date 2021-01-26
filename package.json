@@ -1,6 +1,6 @@
 {
   "name": "strelka-test-site",
-  "homepage": "https://sanisimov98.github.io/",
+  "homepage": "https://sanisimov98.github.io/strelka-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,8 @@
     "react-mapbox-gl": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "worker-loader": "^3.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,6 +28,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "babel": {
+    "ignore": [
+      "./node_modules/mapbox-gl/mapbox-gl.js"
     ]
   },
   "browserslist": {

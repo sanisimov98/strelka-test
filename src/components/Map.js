@@ -3,6 +3,7 @@ import ReactMapboxGl, { GeoJSONLayer, Popup } from "react-mapbox-gl";
 import Place from "./Place";
 import {Link} from 'react-router-dom';
 import {ROUTES_MAP} from "../utils/routesMap";
+
 //токен, необходимый для работы с mapbox
 const accessToken = 'pk.eyJ1Ijoic2FuaXNpbW92IiwiYSI6ImNra2Jsb3h2MTAzbmszMXFzeDZzNXUyZWoifQ.dq9YuV8GpDbbv8B4btLRTA';
 const Mapbox = ReactMapboxGl({
