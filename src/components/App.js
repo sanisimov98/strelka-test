@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter, /*HashRouter*/ } from 'react-router-dom'; //BrowserRouter не работает в GH-pages
+import { Route, Switch, BrowserRouter } from 'react-router-dom'; //BrowserRouter не работает в GH-pages
 import Main from './Main';
 import Map from "./Map";
 import {ROUTES_MAP} from '../utils/routesMap';
@@ -9,7 +9,6 @@ import data from '../data/points.json';
 function App() {
     return (
         <BrowserRouter>
-            {/*<HashRouter>*/}
             <div className='page'>
                 <Switch>
                     {/*Страница с кнопкой "Перейти к карте"*/}
@@ -22,7 +21,6 @@ function App() {
                     </Route>
                 </Switch>
             </div>
-            {/*</HashRouter>*/}
         </BrowserRouter>
     );
 }
