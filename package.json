@@ -1,6 +1,6 @@
 {
   "name": "strelka-test-site",
-  "homepage": "https://sanisimov98.github.io/strelka-site",
+  "homepage": "../strelka-site/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
