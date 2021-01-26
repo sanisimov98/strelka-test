@@ -70,6 +70,7 @@ export default function Map(props) {
                 <Link className='map__link' to={ROUTES_MAP.MAIN}>Вернуться</Link>
             </div>
             <Mapbox
+                // eslint-disable-next-line
                 style="mapbox://styles/mapbox/streets-v11"
                 center={center}
                 zoom={[zoom]}
