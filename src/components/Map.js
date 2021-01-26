@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
+import MapboxGL from 'mapbox-gl';
 import ReactMapboxGl, { GeoJSONLayer, Popup } from "react-mapbox-gl";
 import Place from "./Place";
 import {Link} from 'react-router-dom';
 import {ROUTES_MAP} from "../utils/routesMap";
 
+//так должно работать
+// eslint-disable-next-line import/no-webpack-loader-syntax
+MapboxGL.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 //токен, необходимый для работы с mapbox
 const accessToken = 'pk.eyJ1Ijoic2FuaXNpbW92IiwiYSI6ImNra2Jsb3h2MTAzbmszMXFzeDZzNXUyZWoifQ.dq9YuV8GpDbbv8B4btLRTA';
 const Mapbox = ReactMapboxGl({
