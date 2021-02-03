@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import MapboxGL from 'mapbox-gl';
-import ReactMapboxGl, { GeoJSONLayer, Popup } from "react-mapbox-gl";
+import ReactMapboxGl, { GeoJSONLayer, Popup, MapContext } from "react-mapbox-gl";
+import MapboxDraw from "@mapbox/mapbox-gl-draw";
+import * as turf from '@turf/turf'
 import Place from "./Place";
 import {Link} from 'react-router-dom';
 import {ROUTES_MAP} from "../utils/routesMap";
@@ -24,6 +26,36 @@ export default function Map(props) {
     const [zoom, setZoom] = useState(12);
     /*Стейт place – место, на которое кликнул пользователь*/
     const [place, setPlace] = useState(undefined);
+    // для того, чтобы выделять область на карте, нужно использовать пакет mapbox-gl-draw (и turf.js)
+    const draw = new MapboxDraw({
+        displayControlsDefault: false,
+        controls: {
+            polygon: true,
+            trash: true,
+        },
+    });
+
+    function updateArea(e) {
+        // эта функция взята из примера использования https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-draw/
+        // в консоли при использовании mapbox-gl-draw появляются сообщения
+        // "Unable to preventDefault inside passive event listener invocation."
+        // но, судя по всему, так и должно происходить: https://github.com/mapbox/mapbox-gl-draw/issues/1019
+        const data = draw.getAll();
+        const answer = document.getElementById('calculated-area');
+        if (data.features.length > 0) {
+            const area = turf.area(data);
+            // restrict to area to 2 decimal points
+            const rounded_area = Math.round(area * 100) / 100;
+            answer.innerHTML =
+                '<p>' +
+                rounded_area +
+                '</p><p>square meters</p>';
+        } else {
+            answer.innerHTML = '';
+            if (e.type !== 'draw.delete')
+                alert('Use the draw tools to draw a polygon!');
+        }
+    }
 
     /*Функция для закрытия попапа – меняет состояние переменной place на undefined*/
     function closePopup() {
@@ -95,8 +127,19 @@ export default function Map(props) {
                     }}
                     circleOnClick={(evt) => {evt.preventDefault(); handleMarkerClick(evt)}}
                 />
+
+                <MapContext.Consumer>
+                    {(map) => {
+                        map.addControl(draw);
+                        map.on('draw.create', updateArea);
+                        map.on('draw.delete', updateArea);
+                        map.on('draw.update', updateArea);
+                    }}
+                </MapContext.Consumer>
+
                 {/*Если в переменной состояния place записано место,
                 то создаётся попап, содержащий данные об этом месте*/}
+
                 {place && (
                     <Popup key={place.id} coordinates={place.geometry.coordinates}>
                         <div className='map__popup'>
